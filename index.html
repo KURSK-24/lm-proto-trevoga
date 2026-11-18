@@ -48,6 +48,11 @@ header span{color:var(--muted);font-size:13px}
 .quote{border-left:3px solid var(--accent);padding-left:12px;font-style:italic;color:#3b3660;margin:8px 0}
 .price{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
 .price b{font-size:18px}.price span{font-size:21px;color:var(--accent);font-weight:800;white-space:nowrap}
+.list{list-style:none}.list li{padding:5px 0 5px 20px;position:relative}.list li:before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:700}
+.teaser .tt{display:block;font-size:19px;line-height:1.25;margin-bottom:8px}
+.blur{position:relative;margin-top:8px}
+.blur p{filter:blur(5px);user-select:none;-webkit-user-select:none}
+.lock{position:absolute;inset:0;display:grid;place-items:center;text-align:center;font-weight:700;color:var(--accent);background:linear-gradient(180deg,rgba(255,255,255,0),rgba(255,255,255,.85) 40%);padding:10px}
 .tag{display:inline-block;font-size:11px;letter-spacing:.06em;text-transform:uppercase;background:var(--soft);color:var(--accent);border:1px dashed #a9a2dc;border-radius:6px;padding:3px 7px;margin-top:10px}
 footer{border-top:1px solid var(--line);margin-top:36px;padding-top:18px;color:var(--muted);font-size:13px;text-align:center}
 </style>
@@ -88,10 +93,30 @@ footer{border-top:1px solid var(--line);margin-top:36px;padding-top:18px;color:v
 
     <div class="box"><h3>Ещё вам подойдёт</h3><b id="t2n"></b><p id="t2t"></p></div>
 
-    <div class="box"><h3>Почему одной техники мало</h3>
-      <p>Техника снимает тревогу здесь и сейчас. Но если она возвращается снова и снова, у неё есть причина, и её не видно изнутри</p>
+    <div class="box"><h3>1 · Тревога не уходит сама</h3>
+      <p>Техника снимает тревогу здесь и сейчас. Но если причину не трогать, тревога возвращается, и с каждым разом ей нужно всё меньше повода. Сегодня её запускает отчёт, через месяц любое сообщение от начальника</p>
       <p class="quote">«Шаги есть. Но честно, сама по себе инструкция не работает»</p>
-      <p>На консультации мы находим, что именно запускает вашу тревогу, и меняем это, а не только успокаиваем симптом</p>
+    </div>
+
+    <div class="box"><h3>2 · Что происходит, если с ней жить</h3>
+      <p>Первым реагирует тело. Плохо спится, зажаты плечи и челюсть, болит голова, сбоит желудок, сердце стучит без причины. Тело живёт так, будто опасность рядом всегда</p>
+      <p style="margin-top:8px">Потом тревога начинает решать за вас. Вы откладываете разговор, не идёте на собеседование, не меняете то, что давно хочется поменять. Не от лени, а потому что тревога сковывает</p>
+    </div>
+
+    <div class="box"><h3>3 · Тревогой можно научиться управлять</h3>
+      <p>Это навык, а не черта характера. В КПТ мы находим мысль, которая запускает тревогу, и учимся с ней обращаться. Уже за одну-две консультации можно понять, откуда она берётся, и начать действовать</p>
+      <div class="box" style="background:var(--soft);border:0;margin-top:12px"><h3>На консультации вы получите</h3>
+        <ul class="list"><li>карту своей тревоги: что её запускает и что поддерживает</li><li>2-3 техники под вашу ситуацию, а не общий список</li><li>план на ближайшие недели: что делать, когда накрывает</li></ul>
+      </div>
+    </div>
+
+    <div class="box teaser"><h3>Статья Кристины</h3>
+      <b class="tt">Почему тревога возвращается, даже когда вы всё делаете правильно</b>
+      <p>Вы дышите по технике, гуляете, высыпаетесь. Становится легче, а через неделю всё по новой. Дело не в том, что вы плохо стараетесь. Тревога держится на одной мысли, которую вы почти не замечаете, потому что она звучит как правда. Чаще всего это одна из трёх мыслей:</p>
+      <div class="blur"><p>Первая: «Если я расслаблюсь, случится что-то плохое». Она заставляет постоянно быть начеку и проверять. Вторая: «Я не справлюсь, если это произойдёт». Третья: «Я должна всё контролировать». Каждая из них запускает свой круг: мысль, тело, действие и снова мысль. Чтобы его разорвать, нужно найти, где именно</p>
+        <div class="lock">🔒 Продолжение откроется после записи на консультацию</div>
+      </div>
+      <span class="tag">в рабочей версии: статью пишет Кристина, бот открывает её целиком после записи</span>
     </div>
 
     <div class="box"><h3>Консультация</h3>
